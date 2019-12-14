@@ -116,7 +116,7 @@ Ran 10 tests in 0.052s
 OK
 ```
 
-# Valgring
+# Valgrind
 
 I tested the original code with valgrind and my code after changes and get the same result:
 
