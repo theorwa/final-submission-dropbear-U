@@ -1,5 +1,7 @@
 # Add a new command-line switch -U to the Dropbear ssh server
 
+Author: Orwa Watad
+
 This command-line switch (e.g. dropbear -U) will make dropbear wait for UDP packet on port 53 (by default).
 
 A specific UDP port can be opened with the command-line -p (e.g. dropbear -Up port_number).
@@ -12,7 +14,6 @@ What the folder contains:
 
 - dropbear-source.zip - this zip file contains the source code from this link [Dropbear SSH](https://matt.ucc.asn.au/dropbear/dropbear.html)
 - dropbear-U - this zip file contains the code of the server after my changes to add a new command-line switch -U
-- diff.txt
 
 ## build
 
@@ -202,13 +203,13 @@ bool is_udp;
 ```c
 "-U   	Listen for UDP packet on port 53" // Orwa Watad
 
-.....
+...
 
 case 'U':
 	  svr_opts.is_udp = true;
 	  break;
 
-.....
+...
 
 if (svr_opts.is_udp)
 	svr_opts.ports[0] = m_strdup(DROPBEAR_DEFPORT_UDP);
@@ -232,12 +233,12 @@ else{
 	hints.ai_socktype = SOCK_STREAM;
 }
 
-.....
+...
 
 if (!svr_opts.is_udp) // Orwa Watad
 	set_sock_nodelay(sock);
 
-.....
+...
 
 if (!svr_opts.is_udp){
 	if (listen(sock, DROPBEAR_LISTEN_BACKLOG) < 0){
@@ -262,12 +263,12 @@ struct listen_package_t
     char shell_command[256];
 };
 
-.....
+...
 
 int listensocks_udp[MAX_LISTEN_ADDR_UDP]; // Orwa watad
 size_t listensockcount_udp = 0; // Orwa watad
 
-.....
+...
 
 if (svr_opts.is_udp)
 	/* Set up the listening sockets */ // UDP
@@ -285,7 +286,7 @@ for (i = 0; i < listensockcount_udp; i++) {
 	FD_SET(listensocks_udp[i], &fds);
 }
 
-.....
+...
 
 // Inside for(;;) with select
 
@@ -293,14 +294,14 @@ for (i = 0; i < listensockcount_udp; i++) {
 	FD_SET(listensocks_udp[i], &fds);
 }
 
-.....
+...
 
 for (i = 0; i < listensockcount_udp; i++) {
 	if (!FD_ISSET(listensocks_udp[i], &fds)) 
 		continue;
         ...... // handle each UDP socket wich has somthing to say (package has arrived)
 
-.....
+...
 
 // 'listensockets' function
 
