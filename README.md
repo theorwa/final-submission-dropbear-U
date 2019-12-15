@@ -330,11 +330,7 @@ dropbear -Up 44 -p 55 -p 88        # it's same with: dropbear -Up 44 -Up 55 -Up 
 
 ## What I learned from this task
 
-At first I tried to understand what was required in the exercise, was not so understandable, because I would not know ssh and how it works.
-I started researching the basic concepts related to exercise, like ssh server, socket, TCP, UDP, OpenSsh, etc.
-I installed VirtualBox with Linux Ubuntu and started to understand how ssh server works with the client and OpenSsh.
-Then I moved to understand how the code works, I was able to create the Makefile by using the ./configure command.
-I had some obstacles running the server beu I overcame them.
+
 
 ## Screenshots - simulation
 
