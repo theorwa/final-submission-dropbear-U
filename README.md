@@ -339,16 +339,15 @@ I had some obstacles running the server beu I overcame them.
 ## Screenshots - simulation
 
 1) Before everything:
+
 ![SCREESHOT DECSRIPTION](screenshots/step1.PNG)
 
-2) Run the server with this command:
-```bash
-dropbear -U
-```
-and wait for UDP packet on port 53.
+2) Run the server with this command "dropbear -U" and wait for UDP packet on port 53.
+
 ![SCREESHOT DECSRIPTION](screenshots/step2.PNG)
 
 3)
+
 ![SCREESHOT DECSRIPTION](screenshots/step3.PNG)
 ![SCREESHOT DECSRIPTION](screenshots/step4.PNG)
 ![SCREESHOT DECSRIPTION](screenshots/step5.PNG)
