@@ -332,10 +332,10 @@ dropbear -Up 44 -p 55 -p 88        # it's same with: dropbear -Up 44 -Up 55 -Up 
 
 ## Screenshots
 
-![SCREESHOT DECSRIPTION](screenshots/1.png)
-![SCREESHOT DECSRIPTION](screenshots/2.png)
-![SCREESHOT DECSRIPTION](screenshots/3.png)
-![SCREESHOT DECSRIPTION](screenshots/4.png)
-![SCREESHOT DECSRIPTION](screenshots/5.png)
-![SCREESHOT DECSRIPTION](screenshots/6.png)
-![SCREESHOT DECSRIPTION](screenshots/7.png)
+![SCREESHOT DECSRIPTION](screenshots/1.jpg)
+![SCREESHOT DECSRIPTION](screenshots/2.jpg)
+![SCREESHOT DECSRIPTION](screenshots/3.jpg)
+![SCREESHOT DECSRIPTION](screenshots/4.jpg)
+![SCREESHOT DECSRIPTION](screenshots/5.jpg)
+![SCREESHOT DECSRIPTION](screenshots/6.jpg)
+![SCREESHOT DECSRIPTION](screenshots/7.jpg)
