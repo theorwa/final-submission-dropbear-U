@@ -330,7 +330,36 @@ dropbear -Up 44 -p 55 -p 88        # it's same with: dropbear -Up 44 -Up 55 -Up 
 
 ## What I learned from this task
 
-## Screenshots
+At first I tried to understand what was required in the exercise, was not so understandable, because I would not know ssh and how it works.
+I started researching the basic concepts related to exercise, like ssh server, socket, TCP, UDP, OpenSsh, etc.
+I installed VirtualBox with Linux Ubuntu and started to understand how ssh server works with the client and OpenSsh.
+Then I moved to understand how the code works, I was able to create the Makefile by using the ./configure command.
+I had some obstacles running the server beu I overcame them.
+
+## Screenshots - simulation
+
+1) Before everything:
+![SCREESHOT DECSRIPTION](screenshots/step1.PNG)
+
+2) Run the server with this command:
+```bash
+dropbear -U
+```
+and wait for UDP packet on port 53.
+![SCREESHOT DECSRIPTION](screenshots/step2.PNG)
+
+3)
+![SCREESHOT DECSRIPTION](screenshots/step3.PNG)
+![SCREESHOT DECSRIPTION](screenshots/step4.PNG)
+![SCREESHOT DECSRIPTION](screenshots/step5.PNG)
+![SCREESHOT DECSRIPTION](screenshots/step6.PNG)
+![SCREESHOT DECSRIPTION](screenshots/step7.PNG)
+![SCREESHOT DECSRIPTION](screenshots/step8.PNG)
+![SCREESHOT DECSRIPTION](screenshots/step9.PNG)
+![SCREESHOT DECSRIPTION](screenshots/step10.PNG)
+
+
+## Screenshots - scattered
 
 ![SCREESHOT DECSRIPTION](screenshots/1.jpg)
 ![SCREESHOT DECSRIPTION](screenshots/2.jpg)
