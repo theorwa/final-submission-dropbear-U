@@ -346,9 +346,13 @@ I had some obstacles running the server beu I overcame them.
 
 ![SCREESHOT DECSRIPTION](screenshots/step2.PNG)
 
-3)
+3) Send a UDP packet to the port 53, with right magic number, to open TCP port number 4444:
 
 ![SCREESHOT DECSRIPTION](screenshots/step3.PNG)
+
+4) 
+
+
 ![SCREESHOT DECSRIPTION](screenshots/step4.PNG)
 ![SCREESHOT DECSRIPTION](screenshots/step5.PNG)
 ![SCREESHOT DECSRIPTION](screenshots/step6.PNG)
