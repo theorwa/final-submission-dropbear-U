@@ -350,15 +350,34 @@ I had some obstacles running the server beu I overcame them.
 
 ![SCREESHOT DECSRIPTION](screenshots/step3.PNG)
 
-4) 
-
+4) Send a UDP packet to the port 53, with wrong magic number, to open TCP port number 7777:
 
 ![SCREESHOT DECSRIPTION](screenshots/step4.PNG)
+
+5) Connect to ssh to TCP port number 4444: 
+
 ![SCREESHOT DECSRIPTION](screenshots/step5.PNG)
+
+6) Connect to ssh to TCP port number 4444 (from another client): 
+
 ![SCREESHOT DECSRIPTION](screenshots/step6.PNG)
+
+7) Close the connection between the second client:
+
 ![SCREESHOT DECSRIPTION](screenshots/step7.PNG)
+
+8) Close the connection between the first client:
+
 ![SCREESHOT DECSRIPTION](screenshots/step8.PNG)
+
+------
+
+- Run the server with this command "dropbear -Up 4444" and wait for UDP packet on port 53.
+
 ![SCREESHOT DECSRIPTION](screenshots/step9.PNG)
+
+- Send a UDP packet to the port 4444, with right magic number, to open TCP port number 2222:
+
 ![SCREESHOT DECSRIPTION](screenshots/step10.PNG)
 
 
