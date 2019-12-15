@@ -98,7 +98,10 @@ struct listen_package_t
 
 ## Testing
 
+
+
 Attached a file named: test.py
+
 It can be run by the following command:
 
 ```bash
@@ -307,6 +310,21 @@ for (i = 0; i < listensockcount_udp; i++) {
 
 svr_opts.is_udp = is_udp; // Enables dropbear_listen function yo open a new TCP port
 
+```
+
+## Things to improve
+
+There are two things that I noticed after I tested the server, but for lack of time and I do not know if it is required to handle the case, I didn't touch that, but I have an idea how to do it.
+
+1) In the current version, you can open more than one UDP protocol on the same port.
+```bash
+dropbear -U      # open UDP port number 53
+dropbear -U      # also open UDP port number 53
+```
+
+2) In the current version, it is sufficient to use the command-line switch -U once, it opens all ports after with UDP protocol, like this:
+```bash
+dropbear -Up 44 -p 55 -p 88        # it's same with: dropbear -Up 44 -Up 55 -Up 88
 ```
 
 
