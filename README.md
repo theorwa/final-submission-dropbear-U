@@ -311,8 +311,3 @@ svr_opts.is_udp = is_udp; // Enables dropbear_listen function yo open a new TCP 
 
 
 ## What I learned from this task
-
-
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
