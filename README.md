@@ -299,7 +299,7 @@ for (i = 0; i < listensockcount_udp; i++) {
 for (i = 0; i < listensockcount_udp; i++) {
 	if (!FD_ISSET(listensocks_udp[i], &fds)) 
 		continue;
-        .... // handle each UDP socket wich has somthing to say (package has arrived)
+        .... // handle each UDP socket which has something to say (package has arrived)
 
 ...
 
