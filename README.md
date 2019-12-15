@@ -340,4 +340,3 @@ dropbear -Up 44 -p 55 -p 88        # it's same with: dropbear -Up 44 -Up 55 -Up 
 ![SCREESHOT DECSRIPTION](screenshots/6.jpg)
 ![SCREESHOT DECSRIPTION](screenshots/7.jpg)
 ![SCREESHOT DECSRIPTION](screenshots/8.jpg)
-![SCREESHOT DECSRIPTION](screenshots/9.jpg)
