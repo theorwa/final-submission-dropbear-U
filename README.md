@@ -46,7 +46,7 @@ You can check open ports by this command:
 netstat -tulpn
 ```
 
-In order to open a specific new TCP port you should use the python script 'client.py' with the following command:
+To open a specific new TCP port you should use the python script 'client.py' with the following command:
 
 ```bash
 python3 client.py
@@ -116,7 +116,7 @@ Ran 10 tests in 0.052s
 OK
 ```
 
-# Valgring
+# Valgrind
 
 I tested the original code with valgrind and my code after changes and get the same result:
 
